@@ -1,3 +1,5 @@
+package src;
+
 
 public class ClassOption {
 	private String cn;
