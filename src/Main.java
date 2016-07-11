@@ -5,12 +5,7 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args)throws java.io.IOException{
 		
-		EZgui window = new EZgui();
 		
-		EZweekSchedule[] boxes = new EZweekSchedule[7];
-		for(int i = 0; i < 7; i ++){
-			boxes[i] = new EZweekSchedule(100 * 2*i + 100, 500);
-		}
 		
 		int emptyCount = 0;
 		int weekLength = 5;
@@ -187,35 +182,46 @@ public class Main {
 													}
 												}
 												if(!overlap){
+													EZgui window = new EZgui();
 													if(a > -1){
 														list[0][a].printCRN();
+														list[0][a].printName();
 													}
 													if(b > -1){
 														list[1][b].printCRN();
+														list[1][b].printName();
 													}
 													if(c > -1){
 														list[2][c].printCRN();
+														list[2][c].printName();
 													}
 													if(d > -1){
 														list[3][d].printCRN();
+														list[3][d].printName();
 													}
 													if(e > -1){
 														list[4][e].printCRN();
+														list[4][e].printName();
 													}
 													if(f > -1){
 														list[5][f].printCRN();
+														list[5][f].printName();
 													}
 													if(g > -1){
 														list[6][g].printCRN();
+														list[6][g].printName();
 													}
 													if(h > -1){
 														list[7][h].printCRN();
+														list[7][h].printName();
 													}
 													if(i > -1){
 														list[8][i].printCRN();
+														list[8][i].printName();
 													}
 													if(j > -1){
 														list[9][j].printCRN();
+														list[9][j].printName();
 													}
 													for(int k = 0; k < weekLength; k ++){
 														for(int l = 0; l < time; l ++){			

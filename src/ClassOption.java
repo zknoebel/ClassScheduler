@@ -106,7 +106,9 @@ public class ClassOption {
 		}
 	}
 	void printName(){
-		System.out.println(cn);
+		if( cn != "abc"){
+			System.out.println(cn);
+		}
 	}
 	void printCRN(){
 		if (crn != 0){
