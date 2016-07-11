@@ -4,6 +4,14 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args)throws java.io.IOException{
+		
+		EZgui window = new EZgui();
+		
+		EZweekSchedule[] boxes = new EZweekSchedule[7];
+		for(int i = 0; i < 7; i ++){
+			boxes[i] = new EZweekSchedule(100 * 2*i + 100, 500);
+		}
+		
 		int emptyCount = 0;
 		int weekLength = 5;
 		int time = 144;
