@@ -2,9 +2,14 @@ import java.awt.Color;
 
 
 public class EZgui {
+	static int x;
+	static int y;
+	
 	
 	EZgui(){
-		EZ.initialize(1500, 1000);
+		EZ.initialize();
+		y = EZ.getWindowHeight();
+		x = EZ.getWindowWidth();
 
 		EZweekSchedule[] boxes = new EZweekSchedule[7];
 		for(int i = 0; i < 7; i ++){
