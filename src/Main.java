@@ -1,11 +1,12 @@
 
 import java.io.FileReader;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args)throws java.io.IOException{
 		
-		
+		ArrayList<EZgui> window = new ArrayList<EZgui>();
 		
 		int emptyCount = 0;
 		int weekLength = 5;
@@ -181,8 +182,10 @@ public class Main {
 														}
 													}
 												}
-												if(!overlap){
-													EZgui window = new EZgui();
+												if(!overlap){			
+													
+													window.add(new EZgui());
+													
 													if(a > -1){
 														list[0][a].printCRN();
 														list[0][a].printName();
@@ -226,6 +229,9 @@ public class Main {
 													for(int k = 0; k < weekLength; k ++){
 														for(int l = 0; l < time; l ++){			
 															System.out.print(week[k][l] + " ");
+															if (week[k][l] == 1){
+																window.get(window.size()-1).fillTimeSlot(k*200 + 400,l * 6 + 78);
+															}
 														}
 														System.out.println("");
 													}
