@@ -13,14 +13,14 @@ public class EZgui {
 
 		EZweekSchedule[] boxes = new EZweekSchedule[7];
 		for(int i = 0; i < 7; i ++){
-			boxes[i] = new EZweekSchedule(200 * i + 200, 500);
+			boxes[i] = new EZweekSchedule(x / 8 * i + 3 * x / 16, y / 2);
 		}
 		
 		
 	}
 	
-	void fillTimeSlot(int x, int y){
-		EZ.addRectangle(x, y, 195, 6, Color.yellow, true);
+	void fillTimeSlot(int inputX, int inputY){
+		EZ.addRectangle(inputX, inputY, (int)(x/8 * .975), y/144, Color.yellow, true);
 	}
 
 }

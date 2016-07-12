@@ -8,6 +8,8 @@ public class Main {
 		
 		ArrayList<EZgui> window = new ArrayList<EZgui>();
 		
+		EZ.setFrameRateASAP(true);
+		
 		int emptyCount = 0;
 		int weekLength = 5;
 		int time = 144;
@@ -230,7 +232,8 @@ public class Main {
 														for(int l = 0; l < time; l ++){			
 															System.out.print(week[k][l] + " ");
 															if (week[k][l] == 1){
-																window.get(window.size()-1).fillTimeSlot(k*200 + 400,l * 6 + 78);
+																window.get(window.size()-1).fillTimeSlot(
+																		(int)(k*EZgui.x/8 + EZgui.x * 5 / 16),l * EZgui.y/144);
 															}
 														}
 														System.out.println("");
