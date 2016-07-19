@@ -10,10 +10,15 @@ public class Main {
 		
 		EZ.setFrameRateASAP(true);
 		
+		//int used to make sure the class spot is not empty in the txt file
 		int emptyCount = 0;
+		//number of days in a week
 		int weekLength = 5;
+		//144 10 minute sections in a day
 		int time = 144;
+		//checks to see if two classes overlap in time
 		boolean overlap = false;
+		//the possible classes will be entered into classRoster.txt
 		Scanner scanner = new Scanner(new FileReader("src//classRoster.txt"));
 		int[] numberOfClasses = new int[10];
 		for(int i = 0; i < 10; i ++){
