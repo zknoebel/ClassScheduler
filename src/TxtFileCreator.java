@@ -40,5 +40,48 @@ public class TxtFileCreator{
 		CourseName = courseName;
 		
 	}
+	void setCourseRegistrationNumber(int CRN){
+		CourseRegistrationNumber = CRN;
+	}
+	void setMonday1(int start, int finish){
+		MonStart1 = start; 
+		MonFinish1 = finish;
+	}
+	void setMonday2(int start, int finish){
+		MonStart2 = start; 
+		MonFinish2 = finish;
+	}
+	void setTuesday1(int start, int finish){
+		TuesStart1 = start; 
+		TuesFinish1 = finish;
+	}
+	void setTuesday2(int start, int finish){
+		TuesStart2 = start; 
+		TuesFinish2 = finish;
+	}
+	void setMonday1(int start, int finish){
+		MonStart1 = start; 
+		MonFinish1 = finish;
+	}
+	void setMonday1(int start, int finish){
+		MonStart1 = start; 
+		MonFinish1 = finish;
+	}
+	void setMonday1(int start, int finish){
+		MonStart1 = start; 
+		MonFinish1 = finish;
+	}
+	void setMonday1(int start, int finish){
+		MonStart1 = start; 
+		MonFinish1 = finish;
+	}
+	void setMonday1(int start, int finish){
+		MonStart1 = start; 
+		MonFinish1 = finish;
+	}
+	void setMonday1(int start, int finish){
+		MonStart1 = start; 
+		MonFinish1 = finish;
+	}
 
 }
