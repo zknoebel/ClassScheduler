@@ -59,29 +59,32 @@ public class TxtFileCreator{
 		TuesStart2 = start; 
 		TuesFinish2 = finish;
 	}
-	void setMonday1(int start, int finish){
-		MonStart1 = start; 
-		MonFinish1 = finish;
+	void setWednesday1(int start, int finish){
+		WedStart1 = start; 
+		WedFinish1 = finish;
 	}
-	void setMonday1(int start, int finish){
-		MonStart1 = start; 
-		MonFinish1 = finish;
+	void setWednesday2(int start, int finish){
+		WedStart2 = start; 
+		WedFinish2 = finish;
 	}
-	void setMonday1(int start, int finish){
-		MonStart1 = start; 
-		MonFinish1 = finish;
+	void setThursday1(int start, int finish){
+		ThurStart1 = start; 
+		ThurFinish1 = finish;
 	}
-	void setMonday1(int start, int finish){
-		MonStart1 = start; 
-		MonFinish1 = finish;
+	void setThursday2(int start, int finish){
+		ThurStart2 = start; 
+		ThurFinish2 = finish;
 	}
-	void setMonday1(int start, int finish){
-		MonStart1 = start; 
-		MonFinish1 = finish;
+	void setFriday1(int start, int finish){
+		FriStart1 = start; 
+		FriFinish1 = finish;
 	}
-	void setMonday1(int start, int finish){
-		MonStart1 = start; 
-		MonFinish1 = finish;
+	void setFriday2(int start, int finish){
+		FriStart2 = start; 
+		FriFinish2 = finish;
+	}
+	void closeTxtFileCreator()throws java.io.IOException{
+		writer.close();
 	}
 
 }
