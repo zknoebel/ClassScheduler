@@ -10,7 +10,7 @@ public class Main {
 
 		EZ.setFrameRateASAP(true);
 
-		// int used to make sure the class spot is not empty in the txt file
+		// int used to make sure the class spot is not empty in the text file
 		int emptyCount = 0;
 		// number of days in a week
 		int weekLength = 5;
