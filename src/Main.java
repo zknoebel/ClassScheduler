@@ -19,7 +19,7 @@ public class Main {
 		// checks to see if two classes overlap in time
 		boolean overlap = false;
 		// the possible classes will be entered into classRoster.txt
-		Scanner scanner = new Scanner(new FileReader("src//classRoster.txt"));
+		Scanner scanner = new Scanner(new FileReader("src//classRoster2017Spring.txt"));
 		int[] numberOfClasses = new int[10];
 		for (int i = 0; i < 10; i++) {
 			numberOfClasses[i] = 10;
